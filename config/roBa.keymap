@@ -122,7 +122,7 @@
         FUNCTION {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &mt LG(LEFT) F7  &mt LG(LA(F)) F8  &mt LG(RIGHT) F9  &kp F10
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
             >;
