@@ -120,8 +120,8 @@
         default_layer {
             bindings = <
 &mt ESCAPE Q      &mt LG(W) W   &kp E         &kp R                   &kp T                                                   &kp Y        &kp U           &kp I           &kp O              &lt 5 P
-&mt LSHIFT A      &kp S         &kp D         &kp F                   &kp G        &tog 3                       &mt LG(LS(V)) SQT        &kp H        &mt M J             &mt COMMA K      &mt DOT L           &kp MINUS
-&mt LEFT_SHIFT Z  &mt LG(X) X   &mt LG(C) C   &mt LG(V) V             &kp B        &kp COLON                   &mt LG(LS(N4)) SEMICOLON  &kp N        &mt LG(LA(LEFT)) M  &mb_tap MB3 COMMA  &mt LG(LA(RIGHT)) DOT  &kp QUESTION
+&mt LSHIFT A      &kp S         &kp D         &kp F                   &kp G        &tog 3                       &mt LG(LS(V)) SQT        &kp H        &kp J               &kp K            &kp L               &kp MINUS
+&mt LEFT_SHIFT Z  &mt LG(X) X   &mt LG(C) C   &mt LG(V) V             &kp B        &kp COLON                   &mt LG(LS(N4)) SEMICOLON  &kp N        &mt LG(LEFT) M     &mb_tap MB3 COMMA  &mt LG(RIGHT) DOT   &kp QUESTION
 &sk LCTRL         &sk LEFT_ALT  &sk LEFT_WIN  &lt_to_layer_0 6 LANG2  &lt 2 SPACE  &lt_to_layer_0 7 LANG1      &mt LG(BACKSPACE) BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
@@ -149,8 +149,8 @@
         WIN {
             bindings = <
 &mt ESCAPE Q      &mt LC(W) W   &kp E         &kp R                   &kp T                                                        &kp Y        &kp U           &kp I           &kp O              &lt 5 P
-&mt LSHIFT A      &kp S         &kp D         &kp F                   &kp G        &tog 3                       &mt LG(V) SQT        &kp H        &mt M J             &mt COMMA K      &mt DOT L           &kp MINUS
-&mt LEFT_SHIFT Z  &mt LC(X) X   &mt LC(C) C   &mt LC(V) V             &kp B        &kp COLON                   &mt LG(LS(S)) SEMICOLON   &kp N        &mt LG(LEFT) M    &mb_tap MB3 COMMA  &mt LG(RIGHT) DOT     &kp QUESTION
+&mt LSHIFT A      &kp S         &kp D         &kp F                   &kp G        &tog 3                       &mt LG(V) SQT        &kp H        &kp J               &kp K            &kp L               &kp MINUS
+&mt LEFT_SHIFT Z  &mt LC(X) X   &mt LC(C) C   &mt LC(V) V             &kp B        &kp COLON                   &mt LG(LS(S)) SEMICOLON   &kp N        &mt LG(LEFT) M     &mb_tap MB3 COMMA  &mt LG(RIGHT) DOT   &kp QUESTION
 &sk LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 6 LANG2  &lt 2 SPACE  &lt_to_layer_0 7 LANG1      &mt LC(BACKSPACE) BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 

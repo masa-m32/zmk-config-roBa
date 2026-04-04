@@ -19,9 +19,9 @@ layers:
   - Sft+Gui+S
   - '-'
   - H
-  - {t: J, h: M}
-  - {t: K, h: COMMA}
-  - {t: L, h: DOT}
+  - J
+  - K
+  - L
   - ''''
   - {t: Z, h: LEFT SHIFT}
   - {t: X, h: Cmd+X}
@@ -31,9 +31,9 @@ layers:
   - ':'
   - ;
   - N
-  - {t: M, h: Gui+Alt+LEFT}
+  - {t: M, h: Cmd+LEFT}
   - {t: ',', h: MB3}
-  - {t: '.', h: Gui+Alt+RIGHT}
+  - {t: '.', h: Cmd+RIGHT}
   - /
   - Ctrl
   - Opt
