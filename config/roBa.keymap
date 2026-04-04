@@ -62,6 +62,27 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        mb1_to_layer_0: mb1_to_layer_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1>, <&to 0>;
+            label = "MB1_TO_LAYER_0";
+        };
+
+        mb2_to_layer_0: mb2_to_layer_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2>, <&to 0>;
+            label = "MB2_TO_LAYER_0";
+        };
+
+        mb3_to_layer_0: mb3_to_layer_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB3>, <&to 0>;
+            label = "MB3_TO_LAYER_0";
+        };
     };
 
     behaviors {
@@ -121,7 +142,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mb1_to_layer_0  &mb3_to_layer_0  &mb2_to_layer_0  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
