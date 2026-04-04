@@ -110,7 +110,7 @@
 
         default_layer {
             bindings = <
-&mt ESCAPE Q      &mt LG(W) W   &kp E         &kp R                   &kp T                                                   &kp Y        &mt LC(LEFT) U  &mt LC(UP) I    &mt LC(RIGHT) O    &lt 5 P
+&mt ESCAPE Q      &mt LG(W) W   &kp E         &kp R                   &kp T                                                   &kp Y        &kp U           &kp I           &kp O              &lt 5 P
 &kp A             &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))               &mt LG(LS(V)) SQT        &kp H        &mt LG(LA(LEFT)) J  &mb_tap MB3 K    &mt LG(LA(RIGHT)) L  &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &mt LG(C) C   &mt LG(V) V             &kp B        &kp COLON                   &mt LG(LS(N4)) SEMICOLON  &kp N        &kp M               &kp COMMA          &kp DOT                &kp QUESTION
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &mt LG(BACKSPACE) BACKSPACE  &lt 1 ENTER                             &kp DEL
@@ -121,7 +121,7 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans                       &kp F1  &mt LC(LEFT) F2  &mt LC(UP) F3  &mt LC(RIGHT) F4  &kp F4
 &trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &mt LG(LEFT) F7  &mt LG(LA(F)) F8  &mt LG(RIGHT) F9  &kp F10
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
