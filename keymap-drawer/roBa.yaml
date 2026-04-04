@@ -19,21 +19,21 @@ layers:
   - Sft+Gui+S
   - '-'
   - H
-  - J
-  - K
-  - L
+  - {t: J, h: M}
+  - {t: K, h: COMMA}
+  - {t: L, h: DOT}
   - ''''
   - {t: Z, h: LEFT SHIFT}
-  - X
+  - {t: X, h: Cmd+X}
   - C
   - V
   - B
   - ':'
   - ;
   - N
-  - M
-  - ','
-  - .
+  - {t: M, h: Gui+Alt+LEFT}
+  - {t: ',', h: MB3}
+  - {t: '.', h: Gui+Alt+RIGHT}
   - /
   - Ctrl
   - Opt
