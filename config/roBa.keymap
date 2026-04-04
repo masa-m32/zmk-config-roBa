@@ -180,7 +180,7 @@
 &mt ESCAPE Q      &mt LC(W) W   &kp E         &kp R                   &kp T                                                        &kp Y        &kp U           &kp I           &kp O              &lt 5 P
 &mt LSHIFT A      &kp S         &kp D         &kp F                   &kp G        &to 0                        &mt LC(LS(V)) SQT        &kp H        &mt LC(LA(LEFT)) J  &mb_tap MB3 K    &mt LC(LA(RIGHT)) L  &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &mt LC(C) C   &mt LC(V) V             &kp B        &kp COLON                   &mt LC(LS(N4)) SEMICOLON  &kp N        &kp M               &kp COMMA          &kp DOT                &kp QUESTION
-&sk LCTRL         &sk LEFT_WIN  &sk LCTRL     &lt_to_layer_0 6 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &mt LC(BACKSPACE) BACKSPACE  &lt 1 ENTER                             &kp DEL
+&sk LCTRL         &sk LEFT_ALT  &sk LEFT_WIN  &lt_to_layer_0 6 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &mt LC(BACKSPACE) BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
