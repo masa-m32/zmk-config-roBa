@@ -32,7 +32,7 @@ layers:
   - ;
   - N
   - {t: M, h: Cmd+Opt+LEFT}
-  - {t: ',', h: MB3}
+  - {t: ',', h: Cmd+W}
   - {t: '.', h: Cmd+Opt+RIGHT}
   - /
   - Ctrl
