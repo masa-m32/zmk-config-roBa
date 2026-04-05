@@ -132,8 +132,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                       &kp F1  &kp LC(LEFT)     &kp LC(UP)     &kp LC(RIGHT)     &kp F4
 &trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp LG(LEFT)     &kp LG(LA(F))     &kp LG(RIGHT)     &kp F8
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp PGUP  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp PGDN
             >;
         };
 
