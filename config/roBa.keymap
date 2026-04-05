@@ -56,8 +56,6 @@
     };
 
     macros {
-        ZMK_MACRO(ctrl_sticky, wait-ms = <1>; tap-ms = <1>; bindings = <&sk LCTRL>;)
-
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -121,7 +119,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&ctrl_sticky>;
+            bindings = <&sk LCTRL>, <&kp LSHIFT>;
         };
     };
 
