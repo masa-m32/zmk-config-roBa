@@ -31,9 +31,9 @@ layers:
   - ':'
   - ;
   - N
-  - {t: M, h: Cmd+LEFT}
+  - {t: M, h: Cmd+Opt+LEFT}
   - {t: ',', h: MB3}
-  - {t: '.', h: Cmd+RIGHT}
+  - {t: '.', h: Cmd+Opt+RIGHT}
   - /
   - Ctrl
   - Opt
