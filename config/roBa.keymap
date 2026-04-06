@@ -13,6 +13,10 @@
     release-after-ms = <10000>;
 };
 
+&mouse_gesture_kp {
+    tapping-term-ms = <200>;
+};
+
 &zip_mouse_gesture {
     enable-eager-mode;
 
