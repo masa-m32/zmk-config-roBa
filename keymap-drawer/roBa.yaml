@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - {t: ';', h: WINDOW}
-  - '-'
+  - {t: ▽, type: trans}
   - H
   - J
   - K
