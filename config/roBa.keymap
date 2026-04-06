@@ -140,9 +140,9 @@
         FUNCTION {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                       &trans  &kp LC(LEFT)     &kp LC(UP)     &kp LC(RIGHT)     &kp F4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &kp LG(LEFT)     &kp LG(LA(F))     &kp LG(RIGHT)     &kp LG(LS(N4))
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp LG(LS(V))  &kp LG(LEFT)     &kp LG(LA(F))     &kp LG(RIGHT)     &kp LG(LS(N4))
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp LG(LS(V))                          &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &trans
             >;
         };
 
@@ -157,7 +157,7 @@
 
         CURSOR {
             bindings = <
-&trans          &trans                  &trans          &trans                   &trans  &kp LC(LS(TAB))  &kp UP_ARROW  &kp LC(TAB)  &trans  &kp PG_UP
+&trans          &trans                  &trans          &trans                   &kp LG(W)  &kp LC(LS(TAB))  &kp UP_ARROW  &kp LC(TAB)  &trans  &kp PG_UP
 &trans          &trans                  &trans          &trans                   &trans   &trans      &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &kp PG_DN
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &kp LG(LS(LEFT_ARROW))  &trans  &kp LG(LS(RIGHT_ARROW))  &trans  &trans
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
