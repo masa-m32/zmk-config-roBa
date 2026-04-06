@@ -105,6 +105,8 @@
         op_tab {
             bindings = <&mouse_gesture_kp 0 TAB>;
             key-positions = <8 9>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
     };
 
