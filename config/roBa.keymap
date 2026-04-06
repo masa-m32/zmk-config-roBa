@@ -204,13 +204,5 @@
             >;
         };
 
-        WINDOW {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &trans
-&trans  &trans  &trans  &kp LG(LA(F))  &trans  &trans      &trans  &kp LG(LEFT_ARROW)  &trans  &kp LG(RIGHT_ARROW)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
     };
 };
