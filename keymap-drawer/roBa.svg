@@ -298,7 +298,7 @@ path.combo {
 <tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;to_layer_0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">INT_HENKAN</tspan>
 </text>
 <a href="#x_x">
-<text x="0" y="24" class="key hold layer-activator">6</text>
+<text x="0" y="24" class="key hold layer-activator">7</text>
 </a></g>
 <g transform="translate(271, 231) rotate(9.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
