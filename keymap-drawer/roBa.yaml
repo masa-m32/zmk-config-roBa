@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - {t: ';', h: WINDOW}
-  - _
+  - {t: _, h: ESCAPE}
   - H
   - J
   - K
