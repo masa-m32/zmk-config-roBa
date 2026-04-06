@@ -133,13 +133,19 @@ layers:
   - {t: ▽, type: trans}
   - '^'
   CURSOR:
-  - ESCAPE
-  - Ctl+Sft+TAB
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+Sft+TAB
+  - UP ARROW
   - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UP ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -150,12 +156,11 @@ layers:
   - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESCAPE
   - Gui+Sft+LEFT ARROW
   - {t: ▽, type: trans}
   - Gui+Sft+RIGHT ARROW
@@ -168,11 +173,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
