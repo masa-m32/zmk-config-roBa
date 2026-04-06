@@ -30,7 +30,7 @@ layers:
   - B
   - ':'
   - ;
-  - N
+  - {t: N, h: FUNCTION}
   - {t: M, h: Cmd+Opt+LEFT}
   - {t: ',', h: Cmd+W}
   - {t: '.', h: Cmd+Opt+RIGHT}
@@ -42,7 +42,7 @@ layers:
   - {t: SPACE, h: NUM}
   - {t: '&to_layer_0 INT_MUHENKAN', h: ARROW}
   - BACKSPACE
-  - {t: ENTER, h: FUNCTION}
+  - {t: ENTER, h: CURSOR}
   - DEL
   FUNCTION:
   - {t: ▽, type: trans}
