@@ -9,7 +9,7 @@
 };
 
 &sl {
-    release-after-ms = <100000>;
+    release-after-ms = <10000>;
 };
 
 &trackball {
@@ -186,10 +186,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB4  &trans  &mkp_exit_AML MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                           &to_layer_0 Y  &to_layer_0 U  &to_layer_0 I  &to_layer_0 O  &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &to_layer_0 ESCAPE  &to_layer_0 H  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to 0
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &to_layer_0 COLON      &to_layer_0 SEMICOLON  &to_layer_0 N  &mkp_exit_AML MB4  &to_layer_0 COMMA  &mkp_exit_AML MB5  &to_layer_0 QUESTION
+&trans  &trans  &trans  &to_layer_0 LANG2  &to_layer_0 SPACE  &to_layer_0 LANG1      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                    &to_layer_0 DEL
             >;
         };
 
