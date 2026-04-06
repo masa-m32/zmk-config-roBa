@@ -180,6 +180,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Cmd+1
   - Cmd+2
   - Cmd+3
@@ -194,6 +195,7 @@ layers:
   - Cmd+LEFT ARROW
   - {t: ▽, type: trans}
   - Cmd+RIGHT ARROW
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
