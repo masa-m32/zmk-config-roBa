@@ -18,7 +18,7 @@ layers:
   - G
   - {t: ';', h: WINDOW}
   - {t: _, h: ESCAPE}
-  - H
+  - Cmd+Sft+B
   - J
   - K
   - L
