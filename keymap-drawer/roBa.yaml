@@ -30,7 +30,7 @@ layers:
   - B
   - ':'
   - ;
-  - {t: N, h: FUNCTION}
+  - N
   - {t: M, h: Cmd+Opt+LEFT}
   - {t: ',', h: Cmd+W}
   - {t: '.', h: Cmd+Opt+RIGHT}
