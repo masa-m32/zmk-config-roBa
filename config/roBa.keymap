@@ -9,8 +9,8 @@
 };
 
 &trackball {
-    automouse-layer = <5>;
-    scroll-layers = <6>;
+    automouse-layer = <4>;
+    scroll-layers = <5>;
 
     // arrows {
     //     layers = <4>;
@@ -128,10 +128,10 @@
 
         default_layer {
             bindings = <
-&mt ESCAPE Q      &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &kp U           &kp I           &kp O              &lt 6 P
-&kp A             &kp S         &kp D         &kp F                   &kp G        &tog 4                       &mt LG(LS(V)) SQT        &kp H        &kp J               &kp K            &kp L               &mt LSHIFT MINUS
+&mt ESCAPE Q      &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &kp U           &kp I           &kp O              &lt 5 P
+&kp A             &kp S         &kp D         &kp F                   &kp G        &trans                       &mt LG(LS(V)) SQT        &kp H        &kp J               &kp K            &kp L               &mt LSHIFT MINUS
 &kp Z             &mt LG(X) X   &mt LG(C) C   &mt LG(V) V             &kp B        &kp COLON                   &lt 3 SEMICOLON          &kp N         &mt LG(LA(LEFT)) M  &mt LG(W) COMMA    &mt LG(LA(RIGHT)) DOT  &kp QUESTION
-&kp LCTRL  &sk LEFT_ALT  &sk LEFT_WIN  &lt_to_layer_0 7 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &lt 2 BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp LCTRL  &sk LEFT_ALT  &sk LEFT_WIN  &lt_to_layer_0 6 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &lt 2 BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -166,17 +166,6 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        WIN {
-            bindings = <
-&mt ESCAPE Q      &kp W         &kp E         &kp R                   &kp T                                                        &kp Y        &kp U           &mt LG(UP_ARROW) I      &kp O              &lt 6 P
-&kp A             &kp S         &kp D         &kp F                   &kp G        &to 0                        &mt LG(V) SQT        &kp H        &mt LG(LEFT_ARROW) J    &mt LG(DOWN_ARROW) K     &mt LG(RIGHT_ARROW) L   &mt LSHIFT MINUS
-&kp Z             &mt LC(X) X   &mt LC(C) C   &mt LC(V) V             &kp B        &kp COLON                   &mt LG(LS(S)) SEMICOLON   &kp N        &mt LG(LA(LEFT)) M  &mt LC(W) COMMA    &mt LG(LA(RIGHT)) DOT  &kp QUESTION
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 7 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &lt 2 BACKSPACE  &lt 1 ENTER                             &kp DEL
-            >;
-
-            sensor-bindings = <&inc_dec_kp UP DOWN>;
-        };
-
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
@@ -195,7 +184,7 @@
             >;
         };
 
-        layer_7 {
+        layer_6 {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
