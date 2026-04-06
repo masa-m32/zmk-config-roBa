@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <mouse-gesture.dtsi>
 
 &mt {
     flavor = "balanced";
@@ -10,6 +11,20 @@
 
 &sl {
     release-after-ms = <10000>;
+};
+
+&zip_mouse_gesture {
+    enable-eager-mode;
+
+    cmd_right {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LG(RIGHT)>;
+    };
+
+    cmd_left {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LG(LEFT)>;
+    };
 };
 
 &trackball {
@@ -147,7 +162,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &kp U           &kp I           &kp O              &lt 5 P
-&kp A             &kp S         &kp D         &kp F                   &kp G        &trans                       &mt ESCAPE UNDERSCORE    &kp H        &kp J               &kp K            &kp L               &mt LSHIFT MINUS
+&kp A             &kp S         &kp D         &kp F                   &kp G        &trans                       &mt ESCAPE UNDERSCORE    &kp H        &kp J               &kp K            &mouse_gesture_kp 0 L  &mt LSHIFT MINUS
 &kp Z             &mt LG(X) X   &mt LG(C) C   &mt LG(V) V             &kp B        &kp COLON                   &lt 3 SEMICOLON          &kp N         &kp M               &kp COMMA          &kp DOT                &kp QUESTION
 &kp LCTRL  &sk LEFT_ALT  &sk LEFT_WIN  &lt_to_layer_0 6 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &lt 2 BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
@@ -194,6 +209,15 @@
         };
 
         SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        GESTURE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
