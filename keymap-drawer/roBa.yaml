@@ -66,11 +66,11 @@ layers:
   - F7
   - F8
   - F9
-  - Cmd+Sft+4
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Cmd+1
+  - Cmd+2
+  - Cmd+3
+  - Cmd+4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
