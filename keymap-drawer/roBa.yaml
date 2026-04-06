@@ -50,7 +50,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F1
+  - {t: ▽, type: trans}
   - F2
   - F3
   - F4
@@ -61,8 +61,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F13
-  - F6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F7
   - F8
   - F9
