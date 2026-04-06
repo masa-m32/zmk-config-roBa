@@ -34,6 +34,26 @@
         pattern = <GESTURE_UP>;
         bindings = <&kp LG(LA(F))>;
     };
+
+    desktop_left {
+        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        bindings = <&kp LC(LEFT_ARROW)>;
+    };
+
+    desktop_right {
+        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        bindings = <&kp LC(RIGHT_ARROW)>;
+    };
+
+    mission_control {
+        pattern = <GESTURE_DOWN GESTURE_UP>;
+        bindings = <&kp LC(UP_ARROW)>;
+    };
+
+    desktop_close {
+        pattern = <GESTURE_DOWN GESTURE_DOWN>;
+        bindings = <&kp LC(DOWN_ARROW)>;
+    };
 };
 
 &trackball {
@@ -80,6 +100,11 @@
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
+        };
+
+        op_tab {
+            bindings = <&mouse_gesture_kp 0 TAB>;
+            key-positions = <8 9>;
         };
     };
 
