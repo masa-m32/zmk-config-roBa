@@ -89,34 +89,34 @@ layers:
   - {type: held}
   - PgDn
   NUM:
-  - '-'
+  - 'KP -'
   - KP 7
   - KP 8
   - KP 9
-  - +
+  - 'KP +'
   - ^
   - '&'
   - '~'
-  - +
-  - '-'
-  - /
+  - 'KP +'
+  - 'KP -'
+  - 'KP /'
   - KP 4
   - KP 5
   - KP 6
-  - '*'
+  - 'KP *'
   - Ctl+Alt+KP 0
-  - '='
+  - 'KP ='
   - '!'
   - '@'
   - '#'
-  - '*'
-  - /
+  - 'KP *'
+  - 'KP /'
   - {t: KP 0, h: LEFT SHIFT}
   - KP 1
   - KP 2
   - KP 3
-  - .
-  - '='
+  - 'KP .'
+  - 'KP ='
   - {t: ▽, type: trans}
   - '['
   - ']'
