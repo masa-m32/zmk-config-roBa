@@ -20,14 +20,14 @@
 &zip_mouse_gesture {
     enable-eager-mode;
 
-    tab_next {
+    paste {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LC(TAB)>;
+        bindings = <&kp LG(V)>;
     };
 
-    tab_prev {
+    copy {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LC(LS(TAB))>;
+        bindings = <&kp LG(C)>;
     };
 
     mission_ctrl {
