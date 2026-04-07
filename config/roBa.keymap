@@ -20,19 +20,24 @@
 &zip_mouse_gesture {
     enable-eager-mode;
 
-    cmd_right {
+    tab_next {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LG(RIGHT)>;
+        bindings = <&kp LC(TAB)>;
     };
 
-    cmd_left {
+    tab_prev {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LG(LEFT)>;
+        bindings = <&kp LC(LS(TAB))>;
     };
 
-    cmd_opt_f {
+    mission_ctrl {
         pattern = <GESTURE_UP>;
-        bindings = <&kp LG(LA(F))>;
+        bindings = <&kp LC(UP_ARROW)>;
+    };
+
+    close_tab {
+        pattern = <GESTURE_DOWN>;
+        bindings = <&kp LG(W)>;
     };
 
     desktop_left {
