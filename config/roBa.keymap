@@ -35,6 +35,16 @@
         bindings = <&kp LC(UP_ARROW)>;
     };
 
+    virtual_window_right {
+        pattern = <GESTURE_UP GESTURE_RIGHT>;
+        bindings = <&kp LC(RIGHT_ARROW)>;
+    };
+
+    virtual_window_left {
+        pattern = <GESTURE_UP GESTURE_LEFT>;
+        bindings = <&kp LC(LEFT_ARROW)>;
+    };
+
     close_tab {
         pattern = <GESTURE_DOWN>;
         bindings = <&kp LG(W)>;
