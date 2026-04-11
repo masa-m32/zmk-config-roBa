@@ -1,0 +1,26 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config ZMK_MOUSE_GESTURE
+    bool "Enable mouse gesture support for ZMK"
+    default y
+    help
+      Allows converting sequences of mouse movements into key presses.
+      Supports multiple independent gesture processor instances, each
+      activated by a different key (via &mouse_gesture_kp INSTANCE_ID KEY).
+
+config ZMK_MOUSE_GESTURE_EXEC_MAX_EVENTS
+    int "Max gesture execution events in queue"
+    default 8
+    range 1 32
+    help
+      Size of the message queue for gesture execution events.
+      Increase if you see warnings about the queue being full.
+
+config ZMK_MOUSE_GESTURE_REL_QUEUE_LEN
+    int "Size of the mouse relative movement event queue"
+    default 32
+    range 8 128
+    help
+      Size of the message queue buffering raw relative mouse movements
+      before they are processed into gesture sequences.

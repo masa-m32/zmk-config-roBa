@@ -17,57 +17,65 @@
     tapping-term-ms = <200>;
 };
 
-&zip_mouse_gesture {
-    enable-eager-mode;
+// Gesture instance 0: activated by holding O (&mouse_gesture_kp 0 O)
+// To add more instances, copy this block, change instance-id and the gestures,
+// then add the new node to input-processors in roBa_R.overlay.
+/ {
+    zip_mouse_gesture_0: zip_mouse_gesture_0 {
+        compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>;
+        instance-id = <0>;
+        enable-eager-mode;
 
-    paste {
-        pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LG(V)>;
-    };
+        paste {
+            pattern = <GESTURE_RIGHT>;
+            bindings = <&kp LG(V)>;
+        };
 
-    copy {
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp LG(C)>;
-    };
+        copy {
+            pattern = <GESTURE_LEFT>;
+            bindings = <&kp LG(C)>;
+        };
 
-    mission_ctrl {
-        pattern = <GESTURE_UP>;
-        bindings = <&kp LC(UP_ARROW)>;
-    };
+        mission_ctrl {
+            pattern = <GESTURE_UP>;
+            bindings = <&kp LC(UP_ARROW)>;
+        };
 
-    virtual_window_right {
-        pattern = <GESTURE_UP GESTURE_RIGHT>;
-        bindings = <&kp LC(RIGHT_ARROW)>;
-    };
+        virtual_window_right {
+            pattern = <GESTURE_UP GESTURE_RIGHT>;
+            bindings = <&kp LC(RIGHT_ARROW)>;
+        };
 
-    virtual_window_left {
-        pattern = <GESTURE_UP GESTURE_LEFT>;
-        bindings = <&kp LC(LEFT_ARROW)>;
-    };
+        virtual_window_left {
+            pattern = <GESTURE_UP GESTURE_LEFT>;
+            bindings = <&kp LC(LEFT_ARROW)>;
+        };
 
-    close_tab {
-        pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(W)>;
-    };
+        close_tab {
+            pattern = <GESTURE_DOWN>;
+            bindings = <&kp LG(W)>;
+        };
 
-    desktop_left {
-        pattern = <GESTURE_DOWN GESTURE_LEFT>;
-        bindings = <&kp LC(LEFT_ARROW)>;
-    };
+        desktop_left {
+            pattern = <GESTURE_DOWN GESTURE_LEFT>;
+            bindings = <&kp LC(LEFT_ARROW)>;
+        };
 
-    desktop_right {
-        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
-        bindings = <&kp LC(RIGHT_ARROW)>;
-    };
+        desktop_right {
+            pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+            bindings = <&kp LC(RIGHT_ARROW)>;
+        };
 
-    mission_control {
-        pattern = <GESTURE_DOWN GESTURE_UP>;
-        bindings = <&kp LC(UP_ARROW)>;
-    };
+        mission_control {
+            pattern = <GESTURE_DOWN GESTURE_UP>;
+            bindings = <&kp LC(UP_ARROW)>;
+        };
 
-    desktop_close {
-        pattern = <GESTURE_DOWN GESTURE_DOWN>;
-        bindings = <&kp LC(DOWN_ARROW)>;
+        desktop_close {
+            pattern = <GESTURE_DOWN GESTURE_DOWN>;
+            bindings = <&kp LC(DOWN_ARROW)>;
+        };
     };
 };
 
