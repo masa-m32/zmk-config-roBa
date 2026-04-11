@@ -27,14 +27,14 @@
         instance-id = <0>;
         enable-eager-mode;
 
-        paste {
-            pattern = <GESTURE_RIGHT>;
-            bindings = <&kp LG(V)>;
+        desktop_left {
+            pattern = <GESTURE_LEFT>;
+            bindings = <&kp LC(LEFT_ARROW)>;
         };
 
-        copy {
-            pattern = <GESTURE_LEFT>;
-            bindings = <&kp LG(C)>;
+        desktop_right {
+            pattern = <GESTURE_RIGHT>;
+            bindings = <&kp LC(RIGHT_ARROW)>;
         };
 
         mission_ctrl {
@@ -42,49 +42,9 @@
             bindings = <&kp LC(UP_ARROW)>;
         };
 
-        virtual_window_right {
-            pattern = <GESTURE_UP GESTURE_RIGHT>;
-            bindings = <&kp LC(RIGHT_ARROW)>;
-        };
-
-        virtual_window_left {
-            pattern = <GESTURE_UP GESTURE_LEFT>;
-            bindings = <&kp LC(LEFT_ARROW)>;
-        };
-
         close_tab {
             pattern = <GESTURE_DOWN>;
             bindings = <&kp LG(W)>;
-        };
-
-        desktop_left {
-            pattern = <GESTURE_DOWN GESTURE_LEFT>;
-            bindings = <&kp LC(LEFT_ARROW)>;
-        };
-
-        desktop_right {
-            pattern = <GESTURE_DOWN GESTURE_RIGHT>;
-            bindings = <&kp LC(RIGHT_ARROW)>;
-        };
-
-        mission_control {
-            pattern = <GESTURE_DOWN GESTURE_UP>;
-            bindings = <&kp LC(UP_ARROW)>;
-        };
-
-        desktop_close {
-            pattern = <GESTURE_DOWN GESTURE_DOWN>;
-            bindings = <&kp LC(DOWN_ARROW)>;
-        };
-
-        tab_prev {
-            pattern = <GESTURE_LEFT GESTURE_LEFT>;
-            bindings = <&kp LC(LS(TAB))>;
-        };
-
-        tab_next {
-            pattern = <GESTURE_RIGHT GESTURE_RIGHT>;
-            bindings = <&kp LC(TAB)>;
         };
     };
 };
