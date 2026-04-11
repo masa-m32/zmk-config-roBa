@@ -5,13 +5,14 @@ description: Mouse Gesture behavior
 
 compatible: "zmk,behavior-mouse-gesture"
 
-# Changed from 0 to 1: the parameter is the instance_id of the target
-# zip_mouse_gesture processor (used in &mouse_gesture_kp INSTANCE_ID KEY)
-"#binding-cells":
-  type: int
-  const: 1
-
 properties:
+  "#binding-cells":
+    type: int
+    const: 1
+    description: |
+      The parameter is the instance_id of the target zip_mouse_gesture processor.
+      Used as: &mouse_gesture_kp INSTANCE_ID KEY
+
   toggle-mode:
     type: string
     default: "flip"
