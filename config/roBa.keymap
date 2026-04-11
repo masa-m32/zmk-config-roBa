@@ -97,14 +97,14 @@
         instance-id = <1>;
         enable-eager-mode;
 
-        copy_i {
+        desktop_left_i {
             pattern = <GESTURE_LEFT>;
-            bindings = <&kp LG(C)>;
+            bindings = <&kp LC(LEFT_ARROW)>;
         };
 
-        paste_i {
+        desktop_right_i {
             pattern = <GESTURE_RIGHT>;
-            bindings = <&kp LG(V)>;
+            bindings = <&kp LC(RIGHT_ARROW)>;
         };
 
         paste_plain {
