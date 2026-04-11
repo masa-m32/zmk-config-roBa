@@ -19,9 +19,7 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_mouse_gesture_0>;
-        // To add more gesture instances, append them here:
-        // input-processors = <&zip_mouse_gesture_0>, <&zip_mouse_gesture_1>;
+        input-processors = <&zip_mouse_gesture_0>, <&zip_mouse_gesture_1>;
     };
 };
 

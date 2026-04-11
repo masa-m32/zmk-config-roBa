@@ -76,6 +76,46 @@
             pattern = <GESTURE_DOWN GESTURE_DOWN>;
             bindings = <&kp LC(DOWN_ARROW)>;
         };
+
+        tab_prev {
+            pattern = <GESTURE_LEFT GESTURE_LEFT>;
+            bindings = <&kp LC(LS(TAB))>;
+        };
+
+        tab_next {
+            pattern = <GESTURE_RIGHT GESTURE_RIGHT>;
+            bindings = <&kp LC(TAB)>;
+        };
+    };
+};
+
+// Gesture instance 1: activated by holding I (&mouse_gesture_kp 1 I)
+/ {
+    zip_mouse_gesture_1: zip_mouse_gesture_1 {
+        compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>;
+        instance-id = <1>;
+        enable-eager-mode;
+
+        copy_i {
+            pattern = <GESTURE_LEFT>;
+            bindings = <&kp LG(C)>;
+        };
+
+        paste_i {
+            pattern = <GESTURE_RIGHT>;
+            bindings = <&kp LG(V)>;
+        };
+
+        paste_plain {
+            pattern = <GESTURE_DOWN>;
+            bindings = <&kp LG(LS(V))>;
+        };
+
+        cut_i {
+            pattern = <GESTURE_UP>;
+            bindings = <&kp LG(X)>;
+        };
     };
 };
 
@@ -224,7 +264,7 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &mt UNDERSCORE U  &mt MINUS I           &mouse_gesture_kp 0 O  &lt 5 P
+&kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &mt UNDERSCORE U  &mouse_gesture_kp 1 I  &mouse_gesture_kp 0 O  &lt 5 P
 &mt LSHIFT A       &kp S         &kp D         &kp F                   &kp G        &trans                       &mt ESCAPE UNDERSCORE    &kp H        &kp J               &kp K            &kp L               &kp ENTER
 &mt LSHIFT Z       &mt LG(X) X   &mt LG(C) C   &mt LG(V) V             &kp B        &kp COLON                   &lt 3 SEMICOLON          &kp N         &kp M               &kp COMMA          &mt QUESTION DOT       &mt LALT AT
 &kp LCTRL  &sk LEFT_ALT  &sk LEFT_WIN  &lt_to_layer_0 7 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &lt 2 BACKSPACE  &lt 1 SPACE                              &kp DEL
