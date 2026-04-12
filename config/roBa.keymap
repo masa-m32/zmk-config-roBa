@@ -75,7 +75,7 @@
 
         p_right {
             pattern = <GESTURE_RIGHT>;
-            bindings = <&kp LA(RIGHT_ARROW)>;
+            bindings = <&kp LG(RIGHT_ARROW)>;
         };
 
         p_left_down {
