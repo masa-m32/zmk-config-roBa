@@ -297,15 +297,15 @@
             bindings = <
 &kp KP_MINUS                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                  &kp N7            &kp N8             &kp N9          &kp PLUS              &kp KP_MINUS
 &kp KP_SLASH                &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp KP_EQUAL    &kp N4            &kp N5             &kp N6          &kp KP_ASTERISK       &kp KP_SLASH
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp KP_EQUAL                 &kp N0          &kp N1            &kp N2             &kp N3          &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp KP_EQUAL                 &kp N0          &kp N1            &kp N2             &kp N3          &trans                   &trans
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp CARET
             >;
         };
 
         CURSOR {
             bindings = <
-&trans          &trans                  &trans          &trans                   &trans     &kp LC(LS(TAB))  &kp UP_ARROW  &kp LC(TAB)  &kp LG(W)  &kp PG_UP
-&trans          &trans                  &trans          &trans                   &trans   &trans      &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &kp PG_DN
+&trans          &trans                  &trans          &trans                   &trans     &kp LC(LS(TAB))  &kp UP_ARROW  &kp LC(TAB)  &trans     &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &kp LG(LS(LEFT_ARROW))  &trans  &kp LG(LS(RIGHT_ARROW))  &trans  &trans
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
