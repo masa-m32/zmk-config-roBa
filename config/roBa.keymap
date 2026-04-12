@@ -287,7 +287,7 @@
         FUNCTION {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                       &kp LPAR  &kp RPAR  &kp PG_DN  &kp PG_UP  &kp F4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp LG(LS(V))  &kp LG(C)  &kp LG(V)  &kp LG(X)  &kp LG(LS(N4))
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &kp LG(LS(V))  &kp LG(C)  &kp LG(V)  &kp LG(X)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &trans
             >;
