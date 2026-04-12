@@ -1,4 +1,7 @@
 name: roBa
 build:
+  cmake: zmk-mouse-gesture-multi
+  kconfig: zmk-mouse-gesture-multi/Kconfig
   settings:
     board_root: .
+    dts_root: zmk-mouse-gesture-multi

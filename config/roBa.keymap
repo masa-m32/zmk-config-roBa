@@ -14,60 +14,119 @@
 };
 
 &mouse_gesture_kp {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <300>;
+    flavor = "hold-preferred";
 };
 
-&zip_mouse_gesture {
-    enable-eager-mode;
+&lt {
+    tapping-term-ms = <300>;
+    flavor = "hold-preferred";
+};
 
-    paste {
-        pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LG(V)>;
+// Gesture instance 0: activated by holding O (&mouse_gesture_kp 0 O)
+// To add more instances, copy this block, change instance-id and the gestures,
+// then add the new node to input-processors in roBa_R.overlay.
+/ {
+    zip_mouse_gesture_0: zip_mouse_gesture_0 {
+        compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>;
+        instance-id = <0>;
+        enable-eager-mode;
+
+        desktop_left {
+            pattern = <GESTURE_LEFT>;
+            bindings = <&kp LC(LEFT_ARROW)>;
+        };
+
+        desktop_right {
+            pattern = <GESTURE_RIGHT>;
+            bindings = <&kp LC(RIGHT_ARROW)>;
+        };
+
+        mission_ctrl {
+            pattern = <GESTURE_UP>;
+            bindings = <&kp LC(UP_ARROW)>;
+        };
+
+        close_tab {
+            pattern = <GESTURE_DOWN>;
+            bindings = <&kp LG(W)>;
+        };
     };
+};
 
-    copy {
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp LG(C)>;
+// Gesture instance 2: activated by holding P (&mouse_gesture_kp 2 P)
+/ {
+    zip_mouse_gesture_2: zip_mouse_gesture_2 {
+        compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>;
+        instance-id = <2>;
+        enable-eager-mode;
+
+        p_left {
+            pattern = <GESTURE_LEFT>;
+            bindings = <&kp LG(LEFT_ARROW)>;
+        };
+
+        p_up {
+            pattern = <GESTURE_UP>;
+            bindings = <&kp LG(LA(F))>;
+        };
+
+        p_right {
+            pattern = <GESTURE_RIGHT>;
+            bindings = <&kp LG(RIGHT_ARROW)>;
+        };
+
+        p_left_down {
+            pattern = <GESTURE_LEFT GESTURE_DOWN>;
+            bindings = <&kp LG(N1)>;
+        };
+
+        p_right_down {
+            pattern = <GESTURE_RIGHT GESTURE_DOWN>;
+            bindings = <&kp LG(N4)>;
+        };
+
+        p_down_left {
+            pattern = <GESTURE_DOWN GESTURE_LEFT>;
+            bindings = <&kp LG(N2)>;
+        };
+
+        p_down_right {
+            pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+            bindings = <&kp LG(N3)>;
+        };
     };
+};
 
-    mission_ctrl {
-        pattern = <GESTURE_UP>;
-        bindings = <&kp LC(UP_ARROW)>;
-    };
+// Gesture instance 1: activated by holding I (&mouse_gesture_kp 1 I)
+/ {
+    zip_mouse_gesture_1: zip_mouse_gesture_1 {
+        compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>;
+        instance-id = <1>;
+        enable-eager-mode;
 
-    virtual_window_right {
-        pattern = <GESTURE_UP GESTURE_RIGHT>;
-        bindings = <&kp LC(RIGHT_ARROW)>;
-    };
+        tab_prev {
+            pattern = <GESTURE_LEFT>;
+            bindings = <&kp LC(LS(TAB))>;
+        };
 
-    virtual_window_left {
-        pattern = <GESTURE_UP GESTURE_LEFT>;
-        bindings = <&kp LC(LEFT_ARROW)>;
-    };
+        tab_next {
+            pattern = <GESTURE_RIGHT>;
+            bindings = <&kp LC(TAB)>;
+        };
 
-    close_tab {
-        pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(W)>;
-    };
+        close_tab_i {
+            pattern = <GESTURE_DOWN>;
+            bindings = <&kp LG(W)>;
+        };
 
-    desktop_left {
-        pattern = <GESTURE_DOWN GESTURE_LEFT>;
-        bindings = <&kp LC(LEFT_ARROW)>;
-    };
-
-    desktop_right {
-        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
-        bindings = <&kp LC(RIGHT_ARROW)>;
-    };
-
-    mission_control {
-        pattern = <GESTURE_DOWN GESTURE_UP>;
-        bindings = <&kp LC(UP_ARROW)>;
-    };
-
-    desktop_close {
-        pattern = <GESTURE_DOWN GESTURE_DOWN>;
-        bindings = <&kp LC(DOWN_ARROW)>;
+        reopen_tab {
+            pattern = <GESTURE_UP>;
+            bindings = <&kp LG(LS(T))>;
+        };
     };
 };
 
@@ -216,10 +275,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &mt UNDERSCORE U  &mt MINUS I           &mouse_gesture_kp 0 O  &lt 5 P
-&mt LSHIFT A       &kp S         &kp D         &kp F                   &kp G        &trans                       &mt ESCAPE UNDERSCORE    &kp H        &kp J               &kp K            &kp L               &kp ENTER
-&mt LSHIFT Z       &mt LG(X) X   &mt LG(C) C   &mt LG(V) V             &kp B        &kp COLON                   &lt 3 SEMICOLON          &kp N         &kp M               &kp COMMA          &mt QUESTION DOT       &mt LALT AT
-&kp LCTRL  &sk LEFT_ALT  &sk LEFT_WIN  &lt_to_layer_0 7 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &lt 2 BACKSPACE  &lt 1 SPACE                              &kp DEL
+&kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &mt UNDERSCORE U  &mouse_gesture_kp 1 I  &mouse_gesture_kp 0 O  &mouse_gesture_kp 2 P
+&kp A              &kp S         &kp D         &kp F                   &kp G        &trans                       &mt ESCAPE UNDERSCORE    &kp H        &kp J               &kp K            &kp L               &kp ENTER
+&kp Z              &kp X         &kp C         &kp V                   &kp B        &kp COLON                   &lt 3 SEMICOLON          &kp N         &mt UNDERSCORE M    &mt MINUS COMMA    &mt QUESTION DOT       &mt LALT AT
+&kp LCTRL  &sk LEFT_ALT  &sk LEFT_WIN  &lt_to_layer_0 7 LANG2  &kp LSHIFT  &lt_to_layer_0 3 LANG1      &lt 2 BACKSPACE  &lt 1 SPACE                              &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -227,8 +286,8 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &trans  &kp LC(LEFT)     &kp LC(UP)     &kp LC(RIGHT)     &kp F4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp LG(LS(V))  &kp LG(LEFT)     &kp LG(LA(F))     &kp LG(RIGHT)     &kp LG(LS(N4))
+&trans  &trans  &trans  &trans  &trans                       &kp LPAR  &kp RPAR  &kp PG_DN  &kp PG_UP  &kp F4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &kp LG(LS(V))  &kp LG(C)  &kp LG(V)  &kp LG(X)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &trans
             >;
@@ -256,7 +315,7 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                           &to_layer_0 Y  &to_layer_0 U  &to_layer_0 I          &mouse_gesture_kp 0 O  &to_layer_0 P
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                           &to_layer_0 Y  &to_layer_0 U  &mouse_gesture_kp 1 I  &mouse_gesture_kp 0 O  &mouse_gesture_kp 2 P
 &to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &to_layer_0 ESCAPE  &to_layer_0 H  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &trans
 &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &to_layer_0 COLON      &to_layer_0 SEMICOLON  &to_layer_0 N  &mkp_exit_AML MB4  &to_layer_0 COMMA  &mkp_exit_AML MB5  &to_layer_0 ENTER
 &trans  &trans  &trans  &to_layer_0 LANG2  &to_layer_0 SPACE  &to_layer_0 LANG1      &to_layer_0 BACKSPACE  &trans                                               &to_layer_0 DEL

@@ -14,8 +14,6 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
       revision: main
-    - name: zmk-mouse-gesture
-      remote: kot149
-      revision: v1
+    # zmk-mouse-gesture replaced by local multi-instance fork in zmk-mouse-gesture-multi/
   self:
     path: config
