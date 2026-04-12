@@ -119,6 +119,29 @@ Z    X    C    V    B    : | ;(3)  N    M(hold=_)  ,(hold=-)  .(hold=?)  @(hold=
 Ctrl Alt  Win  Lang2(7)  Shift  Lang1(3) | BS(2)  Space(1)  Del
 ```
 
+## MOUSEレイヤー同期ルール
+
+**デフォルトレイヤーを変更した場合は、必ずMOUSEレイヤー（layer 4）も同じ内容に更新すること。**
+
+### ルール
+
+- MBボタン（`&mkp_exit_AML MB1/2/3/4/5`）はそのまま維持
+- ジェスチャーキー（`&mouse_gesture_kp N KEY`）はそのまま維持
+- それ以外の全キーは `&to_layer_0 KEY` 形式でデフォルトレイヤーのタップキーと一致させる
+- タップキーがないキー（`&mo N` 等）は `&trans` にする
+
+### 対応表の例
+
+| デフォルトレイヤー | MOUSEレイヤー |
+|---|---|
+| `&kp X` | `&to_layer_0 X` |
+| `&mt MOD X` (tap=X) | `&to_layer_0 X` |
+| `&lt N X` (tap=X) | `&to_layer_0 X` |
+| `&sk X` | `&to_layer_0 X` |
+| `&mo N` (タップなし) | `&trans` |
+| `&mouse_gesture_kp N KEY` | そのまま維持 |
+| `&mkp_exit_AML MBx` | そのまま維持 |
+
 ## コミット＆プッシュ
 
 変更後は必ずコミットしてプッシュする:
