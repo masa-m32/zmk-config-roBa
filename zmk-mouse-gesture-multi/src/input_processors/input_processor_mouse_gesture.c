@@ -39,6 +39,13 @@ struct gesture_node {
     const struct gesture_pattern *pattern;
 };
 
+// Pre-buffer for movement events received before gesture mode activates
+#define MAX_PRE_BUFFER_SIZE 32
+struct pre_event {
+    uint16_t code;
+    int32_t value;
+};
+
 struct input_processor_mouse_gesture_data {
     struct k_mutex lock;
     bool is_active;
@@ -56,6 +63,10 @@ struct input_processor_mouse_gesture_data {
     struct gesture_node gesture_nodes_pool[MAX_GESTURE_TRIE_NODES];
     size_t gesture_nodes_count;
     struct gesture_node *gesture_trie_root;
+
+    // Pre-buffer: stores movement events received before gesture mode activates
+    struct pre_event pre_buffer[MAX_PRE_BUFFER_SIZE];
+    uint8_t pre_buffer_count;
 };
 
 static struct gesture_node *allocate_gesture_node(struct input_processor_mouse_gesture_data *data) {
@@ -269,8 +280,23 @@ static void gesture_exec_work_cb(struct k_work *work) {
             data->is_active = s_msg.activate;
             if (old_state && !s_msg.activate) {
                 match_gesture_pattern_locked(dev, true);
+                data->pre_buffer_count = 0;
             } else if (!old_state && s_msg.activate) {
+                // Reset gesture state, then replay any pre-buffered movement events
                 clear_gesture_data_locked(data);
+                uint8_t count = data->pre_buffer_count;
+                data->pre_buffer_count = 0;
+                for (uint8_t i = 0; i < count; i++) {
+                    struct input_event ev = {
+                        .type = INPUT_EV_REL,
+                        .code = data->pre_buffer[i].code,
+                        .value = data->pre_buffer[i].value,
+                    };
+                    input_processor_mouse_gesture_handle_event_locked(dev, &ev);
+                    if (((const struct input_processor_mouse_gesture_config *)dev->config)->enable_eager_mode) {
+                        match_gesture_pattern_locked(dev, false);
+                    }
+                }
             }
             k_mutex_unlock(&data->lock);
         }
@@ -385,10 +411,12 @@ static int input_processor_mouse_gesture_handle_event_locked(const struct device
     }
 
     if (!data->is_active) {
-        data->acc_x = 0;
-        data->acc_y = 0;
-        data->last_direction = GESTURE_NONE;
-        data->current_node = data->gesture_trie_root;
+        // Buffer the event so it can be replayed when gesture mode activates
+        if (data->pre_buffer_count < MAX_PRE_BUFFER_SIZE) {
+            data->pre_buffer[data->pre_buffer_count].code = event->code;
+            data->pre_buffer[data->pre_buffer_count].value = event->value;
+            data->pre_buffer_count++;
+        }
         return ZMK_INPUT_PROC_CONTINUE;
     }
 
@@ -507,6 +535,7 @@ static int input_processor_mouse_gesture_init(const struct device *dev) {
     data->last_gesture_time = 0;
     data->event_count = 0;
     data->last_reset_time = k_uptime_get();
+    data->pre_buffer_count = 0;
 
     k_work_init_delayable(&data->idle_timeout_work, idle_timeout_work_handler);
     data->last_movement_time = 0;
