@@ -277,7 +277,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &kp U             &mouse_gesture_kp 1 I  &mouse_gesture_kp 0 O  &mouse_gesture_kp 2 P
 &kp A              &kp S         &kp D         &kp F                   &kp G        &trans                       &kp ESCAPE    &kp H        &kp J               &kp K            &kp L               &kp ENTER
-&kp Z              &kp X         &kp C         &kp V                   &kp B        &mt SEMICOLON COLON         &mo 3          &mt AT N      &mt UNDERSCORE M    &mt MINUS COMMA    &mt QUESTION DOT       &kp LALT
+&kp Z              &kp X         &kp C         &kp V                   &kp B        &mt SEMICOLON COLON         &mo 3          &mt AT N      &mt UNDERSCORE M    &mt MINUS COMMA    &mt QUESTION DOT       &mt LALT LC(A)
 &kp LCTRL  &sk LEFT_ALT  &sk LEFT_WIN  &lt_to_layer_0 7 LANG2  &kp LSHIFT  &lt_to_layer_0 3 LANG1      &lt 2 BACKSPACE  &lt 1 SPACE                              &kp DEL
             >;
 
@@ -295,7 +295,7 @@
 
         NUM {
             bindings = <
-&kp KP_MINUS                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                                               &kp N7            &kp N8             &kp N9          &kp KP_PLUS           &kp KP_MINUS
+&kp KP_MINUS                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                  &kp N7            &kp N8             &kp N9          &kp PLUS              &kp KP_MINUS
 &kp KP_SLASH                &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp KP_EQUAL    &kp N4            &kp N5             &kp N6          &kp KP_ASTERISK       &kp KP_SLASH
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp KP_EQUAL                 &kp N0          &kp N1            &kp N2             &kp N3          &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp CARET
@@ -317,7 +317,7 @@
             bindings = <
 &to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                           &to_layer_0 Y  &to_layer_0 U  &mouse_gesture_kp 1 I  &mouse_gesture_kp 0 O  &mouse_gesture_kp 2 P
 &to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &to_layer_0 ESCAPE  &to_layer_0 H  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 ENTER
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &to_layer_0 COLON      &trans  &to_layer_0 N  &mkp_exit_AML MB4  &to_layer_0 COMMA  &mkp_exit_AML MB5  &to_layer_0 LALT
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &to_layer_0 COLON      &trans  &to_layer_0 N  &mkp_exit_AML MB4  &to_layer_0 COMMA  &mkp_exit_AML MB5  &to_layer_0 LC(A)
 &to_layer_0 LCTRL  &to_layer_0 LEFT_ALT  &to_layer_0 LEFT_WIN  &to_layer_0 LANG2  &to_layer_0 LSHIFT  &to_layer_0 LANG1      &to_layer_0 BACKSPACE  &to_layer_0 SPACE                                               &to_layer_0 DEL
             >;
         };
