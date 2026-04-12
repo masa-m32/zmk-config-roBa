@@ -278,7 +278,7 @@
 &kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &mt UNDERSCORE U  &mouse_gesture_kp 1 I  &mouse_gesture_kp 0 O  &mouse_gesture_kp 2 P
 &kp A              &kp S         &kp D         &kp F                   &kp G        &trans                       &mt ESCAPE UNDERSCORE    &kp H        &kp J               &kp K            &kp L               &kp ENTER
 &kp Z              &kp X         &kp C         &kp V                   &kp B        &kp COLON                   &lt 3 SEMICOLON          &kp N         &mt UNDERSCORE M    &mt MINUS COMMA    &mt QUESTION DOT       &mt LALT AT
-&kp LCTRL  &sk LEFT_ALT  &sk LEFT_WIN  &lt_to_layer_0 7 LANG2  &mt LSHIFT SPACE  &lt_to_layer_0 3 LANG1      &lt 2 BACKSPACE  &lt 1 SPACE                              &kp DEL
+&kp LCTRL  &sk LEFT_ALT  &sk LEFT_WIN  &lt_to_layer_0 7 LANG2  &kp LSHIFT  &lt_to_layer_0 3 LANG1      &lt 2 BACKSPACE  &lt 1 SPACE                              &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
