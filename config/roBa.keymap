@@ -63,24 +63,24 @@
         instance-id = <1>;
         enable-eager-mode;
 
-        copy_i {
+        tab_prev {
             pattern = <GESTURE_LEFT>;
-            bindings = <&kp LG(C)>;
+            bindings = <&kp LC(LS(TAB))>;
         };
 
-        paste_i {
+        tab_next {
             pattern = <GESTURE_RIGHT>;
-            bindings = <&kp LG(V)>;
+            bindings = <&kp LC(TAB)>;
         };
 
-        paste_plain {
+        close_tab_i {
             pattern = <GESTURE_DOWN>;
-            bindings = <&kp LG(LS(V))>;
+            bindings = <&kp LG(W)>;
         };
 
-        cut_i {
+        reopen_tab {
             pattern = <GESTURE_UP>;
-            bindings = <&kp LG(X)>;
+            bindings = <&kp LG(LS(T))>;
         };
     };
 };
