@@ -232,7 +232,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &mt UNDERSCORE U  &mouse_gesture_kp 1 I  &mouse_gesture_kp 0 O  &lt 5 P
 &mt LSHIFT A       &kp S         &kp D         &kp F                   &kp G        &trans                       &mt ESCAPE UNDERSCORE    &kp H        &kp J               &kp K            &kp L               &kp ENTER
-&mt LSHIFT Z       &mt LG(X) X   &mt LG(C) C   &mt LG(V) V             &kp B        &kp COLON                   &lt 3 SEMICOLON          &kp N         &kp M               &kp COMMA          &mt QUESTION DOT       &mt LALT AT
+&mt LSHIFT Z       &mt LG(X) X   &mt LG(C) C   &mt LG(V) V             &kp B        &kp COLON                   &lt 3 SEMICOLON          &kp N         &mt UNDERSCORE M    &mt MINUS COMMA    &mt QUESTION DOT       &mt LALT AT
 &kp LCTRL  &sk LEFT_ALT  &sk LEFT_WIN  &lt_to_layer_0 7 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &lt 2 BACKSPACE  &lt 1 SPACE                              &kp DEL
             >;
 
@@ -241,8 +241,8 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &trans  &kp LC(LEFT)     &kp LC(UP)     &kp LC(RIGHT)     &kp F4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp LG(LS(V))  &kp LG(LEFT)     &kp LG(LA(F))     &kp LG(RIGHT)     &kp LG(LS(N4))
+&trans  &trans  &trans  &trans  &trans                       &kp LPAR  &kp RPAR  &kp PG_DN  &kp PG_UP  &kp F4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp LG(LS(V))  &kp LG(C)  &kp LG(V)  &kp LG(X)  &kp LG(LS(N4))
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &trans
             >;
