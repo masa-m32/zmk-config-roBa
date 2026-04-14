@@ -78,6 +78,11 @@
             bindings = <&kp LG(RIGHT_ARROW)>;
         };
 
+        p_down {
+            pattern = <GESTURE_DOWN>;
+            bindings = <&kp LG(LS(N4))>;
+        };
+
         p_left_down {
             pattern = <GESTURE_LEFT GESTURE_DOWN>;
             bindings = <&kp LG(N1)>;
