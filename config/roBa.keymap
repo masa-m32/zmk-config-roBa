@@ -186,6 +186,11 @@
             key-positions = <40 41>;
         };
 
+        undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <29 30>;
+        };
+
     };
 
     macros {
