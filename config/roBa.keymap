@@ -176,6 +176,11 @@
             key-positions = <24 25>;
         };
 
+        space_combo {
+            bindings = <&kp SPACE>;
+            key-positions = <40 41>;
+        };
+
     };
 
     macros {
